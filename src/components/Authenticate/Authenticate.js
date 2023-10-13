@@ -10,7 +10,7 @@ export default function Authenticate() {
     return (
         <>
             <Routes>
-                {/* <Route path='/*'  element={<Dashboard />} /> */}
+                <Route path='/*'  element={<Signin />} />
                 <Route path='/signup' element={<Signup />} />
                 <Route path='/signin' element={<Signin />} />
                 <Route path='/admin' element={<Dashboard admin={true} />} />

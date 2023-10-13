@@ -4,6 +4,27 @@
     background-color: #010409;
 }
 
+
+#switch {
+    position: fixed;
+    bottom: 120px;
+    right: 70px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 7px 13px;
+    z-index: 4;
+    background-color: #30363d;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#switch:hover {
+    box-shadow: 0px 0px 50px white;
+    transform: scale(1.1);
+}
+
 .component {
     border-right: 1px solid #30363d;
     border-bottom: 1px solid #30363d;
