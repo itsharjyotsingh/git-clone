@@ -1,0 +1,59 @@
+#main {
+    width: 100%;
+    min-height: 100%;
+    background-color: #010409;
+}
+
+.component {
+    border-right: 1px solid #30363d;
+    border-bottom: 1px solid #30363d;
+}
+
+#main #Navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+#Navbar .leftSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+    fill: white;
+    color: white;
+}
+
+.leftSection span {
+    letter-spacing: -1px;
+    font-size: 15px;
+}
+
+#Navbar .rightSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.gap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.gap img {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+#undernav-section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}

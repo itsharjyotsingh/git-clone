@@ -1,0 +1,20 @@
+.repo-new-button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    width: 60px;
+}
+
+.repo-new-button i {
+    font-size: 18px;
+}
+
+.repo-new-button:hover {
+    background-color: #2ea043;
+}

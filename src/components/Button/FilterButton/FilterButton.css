@@ -1,0 +1,33 @@
+.github-filter-button {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: #7c838e;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.github-filter-button span {
+    font-size: 15px;
+    color: #fff;
+}
+
+.github-filter-button div {
+    display: flex;
+    font-size: 10px;
+    background-color: #30363d;
+    border-radius: 50px;
+    padding: 5px;
+    color: #fff;
+}
+
+.github-filter-button:hover {
+    border: 1px solid #8b949e;
+    background-color: #30363d;
+}

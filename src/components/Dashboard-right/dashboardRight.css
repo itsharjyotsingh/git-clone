@@ -1,0 +1,225 @@
+.dashboard-right-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.dashboard-right-section .middle-element {
+    background-color: #010409;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+}
+
+.middle-element-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    font-size: 15px;
+}
+
+.middle-element-top h2 {
+    font-weight: 400;
+}
+
+.middle-element-top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.middle-element-top-right a {
+    color: #2681f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.middle-element-top-right a:hover {
+    text-decoration: underline;
+}
+
+
+.home-ele-top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-ele-top-section .leftpart {
+    display: flex;
+    gap: 10px;
+}
+
+.home-ele-top-section .leftpart img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.leftpart-diff {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftpart-diff div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.leftpart-diff div a {
+    color: #2681f7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.leftpart-diff span {
+    color: #6f8580;
+    font-size: 10px;
+}
+
+.leftpart-diff div a:hover {
+    text-decoration: underline;
+}
+
+.leftpart-diff div span {
+    color: #5c8590;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.project-section-wrapper {
+    padding: 20px 10px;
+    background-color: #161b22;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.language-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.color {
+    width: 10px;
+    height: 10px;
+    background-color: #2681f7;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.project-section-wrapper span {
+    font-weight: 100;
+}
+
+.main-project-section {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-project-section .leftpart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-project-section .leftpart img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-project-section .leftpart span {
+    font-weight: 400;
+
+}
+
+.dashboard-right-section .last-section {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.container-wrapper {
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container-wrapper-main {
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid #21262d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.changes-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.changes-main-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: -20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle {
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 100%;
+    background-color: #30363d;
+    transform: translate(-45%, 0%);
+}
+
+.dot-span-container {
+    display: flex;
+    align-items: center;
+}
+
+.dot-span-container span {
+    font-size: 10px;
+    margin-left: 2em;
+    font-weight: 100;
+    color: #6f8580;
+}
+
+.changes-details-container {
+    border-left: 1px solid #30363d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2em;
+    font-weight: 100;
+}

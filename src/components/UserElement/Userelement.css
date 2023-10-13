@@ -1,0 +1,19 @@
+.user-component {
+    display: flex;
+    width: 60%;
+}
+
+.user-component-wrapper {
+    width: 70%;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.user-component-cross {
+    width: 30%;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    border-left: 1px solid grey;
+}

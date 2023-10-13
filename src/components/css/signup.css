@@ -1,0 +1,143 @@
+#stars {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('https://github.githubassets.com/images/modules/site/home/hero-glow.svg');
+    background-position: center;
+    background-size: 200vw;
+    background-color: #040d21;
+}
+
+#stars #stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: radial-gradient(2px 2px at 50px 200px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(3px 4px at 120px 40px, #ddd, rgba(0, 0, 0, 0));
+    background-size: 250px 250px;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#stars #navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+#navbar svg {
+    fill: #fff;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: #677895;
+}
+
+#navbar div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar div a i {
+    font-size: 13px;
+}
+
+#navbar div a:hover {
+    text-decoration: underline;
+}
+
+#container-outer {
+    margin-top: 100px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+#component-box #loader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 50px;
+}
+
+#component-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #0c162d;
+    color: #7788a7;
+    border: 1px solid #202637;
+    border-radius: 5px;
+    padding: 15px 20px;
+    gap: 30px;
+    overflow: hidden;
+}
+
+#component-box span {
+    font-weight: 400;
+}
+
+#container-outer #bottom {
+    color: #606f8c;
+    font-size: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container-outer #bottom a {
+    color: #0969da;
+}
+
+#component-box #input-box-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#component-box label {
+    font-size: 15px;
+    color: #00cfc8;
+    font-weight: 500;
+}
+
+#component-box #input-box-button input {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    
+    height: 20px;
+}
+
+#component-box #input-box-button input:focus {
+    outline: 1px solid #0969da;
+}
+
+#component-box #input-box-button button {
+    width: 100px;
+    background-color: #0c162d;
+    color: #606f8c;
+    border: 1px solid #606f8c;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+#component-box #input-box-button i {
+    color: rgb(255, 25, 220);
+}

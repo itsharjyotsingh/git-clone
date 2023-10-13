@@ -1,0 +1,18 @@
+.ghost-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161b22;
+    color: #676e78;
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 5px;
+    width: 32.5px;
+    height: 32.5px;
+    font-size: 18px;
+}
+
+.ghost-button:hover {
+    background-color: #30363d;
+    color: white;
+}

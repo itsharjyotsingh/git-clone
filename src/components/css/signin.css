@@ -1,0 +1,133 @@
+#signin-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#signin-outer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    min-width: 400px;
+}
+
+#signin-outer-box svg {
+    fill: #fff;
+}
+
+#signin-outer-box h1 {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#input-area {
+    background-color: #161b22;
+    padding: 20px 0 20px 0;
+    border-radius: 5px;
+    min-width: 300px;
+    border: 1px solid #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-area form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#password-container a {
+    color: #2274e3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+form .input-box {
+    background-color: #0d1117;
+    color: white;
+    width: 100%;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    height: 25px;
+    padding: 2px 0px;
+}
+
+form .input-box:focus {
+    outline: 1px solid #2274e3;
+}
+
+#input-area #submit-button {
+    background-color: #278739;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#input-area #submit-button:hover {
+    background-color: #2ea043;
+    cursor: pointer;
+}
+
+#second-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    height: 70px;
+    width: 300px;
+}
+
+#second-element a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #2274e3;
+}
+
+#second-element h1 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 5px;
+}
+
+#second-element > a {
+    font-weight: 500;
+}
+
+#third-element {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 80px;
+}
+
+#third-element a {
+    text-decoration: none;
+    color: #2274e3;
+    font-size: 12px;
+}
+
+#third-element a:last-child {
+    color: #656a71;
+}

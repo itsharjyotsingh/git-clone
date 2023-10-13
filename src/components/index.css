@@ -1,0 +1,17 @@
+#space-container {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    background-image: url('https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp');
+    background-size: 280vw;
+    background-position:top 0% left 68%;
+    z-index: -2;
+}
+
+#drone {
+    position: absolute;
+    right: 8vw;
+    top: 20%;
+    width: 20vw;
+}

@@ -1,0 +1,32 @@
+.repo-menu-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #161b22;
+    color: white;
+    border: none;
+    height: 32.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    gap: 7px;
+    fill: #626973;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.repo-menu-button img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.repo-menu-button i {
+    font-size: 20px;
+    color: #626973;
+}
+
+.repo-menu-button:hover {
+    background-color: #292f36;
+    cursor: pointer;
+}
