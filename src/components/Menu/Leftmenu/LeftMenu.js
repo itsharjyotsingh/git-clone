@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import './leftmenu.css';
 
 import GhostButton from '../../Button/GhostButton/GhostButton';
@@ -6,8 +6,12 @@ import Element from '../../Element/Element';
 import RepoElement from '../../Repoelements/RepoElement';
 
 import img from '../../../images/user.jpg';
+import UserContext from '../../../Context';
 
-export default function LeftMenu({setLeftOpen=null}) {
+export default function LeftMenu({ setLeftOpen = null }) {
+   
+    const userData = useContext(UserContext);
+
     return (
         <div id='leftMenu'>
             <div className='menu-items-container'>
@@ -48,11 +52,10 @@ export default function LeftMenu({setLeftOpen=null}) {
                             <GhostButton data={<i class="ri-search-line"></i>} />
                         </div>
 
-                        <RepoElement data={[<img src={img} />, "itsharjyotsingh/Gfg"]} />
-                        <RepoElement data={[<img src={img} />, "itsharjyotsingh/Leetcode"]} />
-                        <RepoElement data={[<img src={img} />, "itsharjyotsingh/Rebu"]} />
-                        <RepoElement data={[<img src={img} />, "itsharjyotsingh/Zomato-clone"]} />
-                        <RepoElement data={[<img src={img} />, "itsharjyotsingh/Spotify"]} />
+                        
+                        {userData[0].repositories.map( ele => {
+                            return <RepoElement data={[<img src={userData[0].image} />, `${userData[0].username}/${ele.name}`]} />
+                        })}
 
                     </div>
                 </div>

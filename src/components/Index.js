@@ -10,15 +10,7 @@ import Authenticate from './Authenticate/Authenticate';
 
 export default function Index() {
 
-    const [isadmin, setAdmin] = useState(false);
-
-    const switchuser = () => {
-        setAdmin(!isadmin);
-    }
-
     return (
-        <UserContext.Provider value={{isadmin, switchuser}} >
-            <Authenticate />
-        </UserContext.Provider>
+        <Authenticate/>
     );
 }

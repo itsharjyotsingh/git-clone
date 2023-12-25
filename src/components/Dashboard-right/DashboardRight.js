@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './dashboardRight.css';
 import { Link } from 'react-router-dom'; 
 
@@ -9,8 +9,11 @@ import DashboardContainer from '../dashboard-container/DashboardContainer';
 import FilterButton from '../Button/FilterButton/FilterButton';
 import ProperGhostButton from '../../components/Button/ProperGhostButton/ProperGhostButton';
 import StarButton from '../../components/Button/StarButton/StarButton';
+import UserContext from '../../Context';
 
 export default function DashboardRight() {
+
+    const userData = useContext(UserContext);
 
     return (
         <div className='dashboard-right-section'>
@@ -25,44 +28,49 @@ export default function DashboardRight() {
                 </div>
 
                 <div className='container-wrapper-main'>
-                    <div className='container'>
-                        <div className='home-ele-top-section'>
-                            <div className='leftpart'>
-                                {/* left */}
-                                <img src={img} alt='img'></img>
-                                <div className='leftpart-diff'>
-                                    <div>
-                                        <Link>harjyotsingh</Link> <span>created a repository</span>
+
+                    {userData[0].repositories.map(ele => {
+                        return (
+                            <div className='container'>
+                                <div className='home-ele-top-section'>
+                                    <div className='leftpart'>
+                                        {/* left */}
+                                        <img src={userData[0].image} alt='img'></img>
+                                        <div className='leftpart-diff'>
+                                            <div>
+                                                <Link>{userData[0].username}</Link> <span>created a repository</span>
+                                            </div>
+
+                                            <span>{ele.time}</span>
+                                        </div>
                                     </div>
 
-                                    <span>13 hours ago</span>
-                                </div>
-                            </div>
-
-                            <div className='rightpart'>
-                                {/* right */}
-                                <ProperGhostButton data={<i class="ri-more-fill"></i>} />
-                            </div>
-                        </div>
-
-                        <div className='project-section-wrapper top-margin'>
-                            <div className='main-project-section'>
-                                <div className='leftpart'>
-                                    <img src={img} ></img>
-                                    <span>harjyotsingh/scripthon</span>
+                                    <div className='rightpart'>
+                                        {/* right */}
+                                        <ProperGhostButton data={<i class="ri-more-fill"></i>} />
+                                    </div>
                                 </div>
 
-                                <div className='rightpart'>
-                                    <StarButton data={<i class="ri-star-line"></i>}
-                                        sign='Star' num={<i class="ri-arrow-down-s-fill"></i>}></StarButton>
+                                <div className='project-section-wrapper top-margin'>
+                                    <div className='main-project-section'>
+                                        <div className='leftpart'>
+                                            <img src={img} ></img>
+                                            <span>{userData[0].username}/{ele.name}</span>
+                                        </div>
+
+                                        <div className='rightpart'>
+                                            <StarButton data={<i class="ri-star-line"></i>}
+                                                sign='Star' num={<i class="ri-arrow-down-s-fill"></i>}></StarButton>
+                                        </div>
+                                    </div>
+                                    <div className='language-section'>
+                                        <div className='color'></div>
+                                        <span>Python</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='language-section'>
-                                <div className='color'></div>
-                                <span>Python</span>
-                            </div>
-                        </div>
-                    </div>
+                        );
+                    })}
                 </div>
             </div>
 
