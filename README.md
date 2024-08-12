@@ -1,4 +1,4 @@
-# Frontend for [Your Project Name]
+# Frontend for Git
 
 This repository contains the frontend of the project, built using **React.js** and **GSAP**. The application provides user authentication features, including login and signup, with smooth animations powered by GSAP.
 
